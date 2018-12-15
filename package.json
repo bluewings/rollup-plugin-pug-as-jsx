@@ -1,0 +1,57 @@
+{
+  "name": "rollup-plugin-pug-as-jsx",
+  "version": "1.0.0",
+  "main": "dist/rollup-plugin-pug-as-jsx.cjs.js",
+  "module": "dist/rollup-plugin-pug-as-jsx.es.js",
+  "jsnext:main": "dist/rollup-plugin-pug-as-jsx.es.js",
+  "description": "utils for pug-as-jsx",
+  "author": {
+    "name": "Sung Won Cha",
+    "email": "mygenie3@naver.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bluewings/rollup-plugin-pug-as-jsx"
+  },
+  "dependencies": {
+    "pug-as-jsx-utils": "^1.0.2",
+    "rollup-pluginutils": "^2.3.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.2.0",
+    "@babel/plugin-transform-runtime": "^7.2.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-eslint": "^10.0.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-register": "^6.26.0",
+    "eslint": "^5.10.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-react": "^7.11.1",
+    "mocha": "^5.2.0",
+    "prettier": "^1.15.3",
+    "pug": "^2.0.3",
+    "rollup": "^0.67.4",
+    "rollup-plugin-babel": "^4.1.0",
+    "rollup-plugin-commonjs": "^9.2.0",
+    "rollup-plugin-node-resolve": "^4.0.0",
+    "should": "^13.2.3"
+  },
+  "scripts": {
+    "test": "mocha",
+    "pretest": "npm run build",
+    "build": "rollup -c",
+    "prebuild": "rm -rf dist/*",
+    "prepublishOnly": "npm test",
+    "prepare": "npm run build"
+  },
+  "files": [
+    "src",
+    "dist",
+    "README.md"
+  ],
+  "license": "MIT"
+}
