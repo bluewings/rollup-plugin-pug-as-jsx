@@ -1,6 +1,6 @@
 {
   "name": "rollup-plugin-pug-as-jsx",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "main": "dist/rollup-plugin-pug-as-jsx.cjs.js",
   "module": "dist/rollup-plugin-pug-as-jsx.es.js",
   "jsnext:main": "dist/rollup-plugin-pug-as-jsx.es.js",
@@ -14,7 +14,7 @@
     "url": "https://github.com/bluewings/rollup-plugin-pug-as-jsx"
   },
   "dependencies": {
-    "pug-as-jsx-utils": "^1.0.17",
+    "pug-as-jsx-utils": "^1.0.19",
     "rollup-pluginutils": "^2.3.3"
   },
   "devDependencies": {
@@ -26,16 +26,16 @@
     "babel-polyfill": "^6.26.0",
     "babel-preset-env": "^1.7.0",
     "babel-register": "^6.26.0",
-    "eslint": "^5.10.0",
+    "eslint": "^5.12.1",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-jsx-a11y": "^6.1.2",
-    "eslint-plugin-react": "^7.11.1",
+    "eslint-plugin-react": "^7.12.4",
     "mocha": "^5.2.0",
-    "prettier": "^1.15.3",
+    "prettier": "^1.16.0",
     "pug": "^2.0.3",
-    "rollup": "^1.1.0",
-    "rollup-plugin-babel": "^4.1.0",
+    "rollup": "^1.1.1",
+    "rollup-plugin-babel": "^4.3.2",
     "rollup-plugin-commonjs": "^9.2.0",
     "rollup-plugin-node-resolve": "^4.0.0",
     "should": "^13.2.3"
