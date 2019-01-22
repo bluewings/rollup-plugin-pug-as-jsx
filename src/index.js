@@ -10,10 +10,12 @@ export default function pugAsJsx(options = {}) {
     transform(pugCode, id) {
       if (id.slice(-4) !== '.pug') return null;
       if (!filter(id)) return null;
-      const { jsxTemplate: code } = pugToJsx(pugCode, {
+      const { jsxTemplate } = pugToJsx(pugCode, {
         template: true,
         resolve: options.resolve || {},
       });
+      const basename = id.split('/').pop().replace(/\.[a-zA-Z0-9]+$/, '');
+      const code = jsxTemplate.replace(/%BASENAME%/g, `./${basename}`);
       return { code };
     },
   };
