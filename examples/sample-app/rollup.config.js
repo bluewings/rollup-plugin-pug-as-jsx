@@ -36,7 +36,8 @@ export default {
     babel({
       runtimeHelpers: true,
       plugins: ['@babel/transform-runtime'],
-      extensions: ['.pug', '.js', '.jsx', '.ts', '.tsx'],
+      // extensions: ['.pug', '.js', '.jsx', '.ts', '.tsx'],
+      extensions: ['.js', '.jsx', '.ts', '.tsx'],
     }),
     postcss({
       plugins: [
