@@ -1,4 +1,4 @@
-import { pugToJsx } from 'pug-as-jsx-utils';
+import { pugToJsx, babelTransform } from 'pug-as-jsx-utils';
 import { createFilter } from 'rollup-pluginutils';
 
 export default function pugAsJsx(options = {}) {
@@ -14,8 +14,7 @@ export default function pugAsJsx(options = {}) {
         template: true,
         resolve: options.resolve || {},
       });
-      const basename = id.split('/').pop().replace(/\.[a-zA-Z0-9]+$/, '');
-      const code = jsxTemplate.replace(/%BASENAME%/g, `./${basename}`);
+      const code = babelTransform(jsxTemplate, id);
       return { code };
     },
   };

@@ -12,7 +12,7 @@ describe('rollup-plugin-pug-as-jsx', () => {
         pugAsJsx(),
         babel({
           presets: ['@babel/preset-react'],
-          extensions: ['.pug', 'js', '.jsx'],
+          extensions: ['js', '.jsx'],
         }),
       ],
     })
