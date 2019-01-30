@@ -1,0 +1,36 @@
+// https://tailwindcss.com/docs/colors
+.box_red,
+.box_green,
+.box_blue {
+  max-width: 600px;
+  text-align: justify;
+  line-height: 1.5rem;
+  @apply flex border-solid border-l-4 border-t-0 border-r-0 border-b-0 px-4 py-3 mb-4;
+  p {
+    @apply font-semibold m-0;
+  }
+  pre {
+    margin-bottom: 0;
+  }
+}
+
+.box_red {
+  @apply bg-red-lightest border-red text-red-darkest;
+  i {
+    @apply text-red;
+  }
+}
+
+.box_green {
+  @apply bg-green-lightest border-green text-green-darkest;
+  i {
+    @apply text-green;
+  }
+}
+
+.box_blue {
+  @apply bg-blue-lightest border-blue text-blue-darkest;
+  i {
+    @apply text-blue;
+  }
+}
