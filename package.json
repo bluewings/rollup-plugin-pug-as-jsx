@@ -1,6 +1,6 @@
 {
   "name": "rollup-plugin-pug-as-jsx",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "main": "dist/rollup-plugin-pug-as-jsx.cjs.js",
   "module": "dist/rollup-plugin-pug-as-jsx.es.js",
   "jsnext:main": "dist/rollup-plugin-pug-as-jsx.es.js",
@@ -14,8 +14,8 @@
     "url": "https://github.com/bluewings/rollup-plugin-pug-as-jsx"
   },
   "dependencies": {
-    "pug-as-jsx-utils": "^1.0.23",
-    "rollup-pluginutils": "^2.3.3"
+    "pug-as-jsx-utils": "^1.0.38",
+    "rollup-pluginutils": "^2.8.2"
   },
   "devDependencies": {
     "@babel/core": "^7.2.0",
