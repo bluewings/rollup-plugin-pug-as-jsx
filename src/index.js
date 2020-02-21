@@ -13,6 +13,8 @@ export default function pugAsJsx(options = {}) {
       const { jsxTemplate } = pugToJsx(pugCode, {
         template: true,
         resolve: options.resolve || {},
+        rootDir: options.rootDir || undefined,
+        resourcePath: id,
       });
       const code = babelTransform(jsxTemplate, id);
       return { code };
