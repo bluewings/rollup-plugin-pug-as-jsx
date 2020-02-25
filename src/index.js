@@ -1,5 +1,7 @@
+import fs from 'fs';
 import { pugToJsx, babelTransform, codemod } from 'pug-as-jsx-utils';
 import { createFilter } from 'rollup-pluginutils';
+
 
 export default function pugAsJsx(options = {}) {
   const filter = createFilter(options.include, options.exclude);
@@ -21,6 +23,14 @@ export default function pugAsJsx(options = {}) {
         codemod({ useThis, variables }, id);
       }
       const code = babelTransform(jsxTemplate, id);
+      if (options.transpiledFile) {
+        try {
+          const transpiledJsx = id.replace(/(\.[a-zA-Z0-9]+)$/, '$1.transpiled.jsx');
+          fs.writeFileSync(transpiledJsx, `${code}\n\n`, 'utf8');
+        } catch (err) {
+          /* ignore */
+        }
+      }
       return { code };
     },
   };
