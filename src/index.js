@@ -13,6 +13,7 @@ export default function pugAsJsx(options = {}) {
       const { jsxTemplate, useThis, variables } = pugToJsx(pugCode, {
         template: true,
         resolve: options.resolve || {},
+        transform: options.transform,
         rootDir: options.rootDir || undefined,
         resourcePath: id,
       });

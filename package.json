@@ -1,6 +1,6 @@
 {
   "name": "rollup-plugin-pug-as-jsx",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "main": "dist/rollup-plugin-pug-as-jsx.cjs.js",
   "module": "dist/rollup-plugin-pug-as-jsx.es.js",
   "jsnext:main": "dist/rollup-plugin-pug-as-jsx.es.js",
