@@ -12,7 +12,7 @@
   },
   "devDependencies": {
     "@babel/plugin-transform-runtime": "^7.2.0",
-    "node-sass": "^4.11.0",
+    "node-sass": "^7.0.0",
     "postcss-flexbugs-fixes": "^4.1.0",
     "postcss-preset-env": "^6.5.0",
     "rollup-plugin-babel": "^4.3.2",
